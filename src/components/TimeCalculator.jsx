@@ -14,10 +14,11 @@ function TimeCalculator() {
     const baseTime = new Date(`1970-01-01T${initialTime}:00`);
     const times = [];
 
-    for (let i = 1; i < amount; i++) {
-      const newTime = new Date(baseTime.getTime() + i * interval * 60000);
-      times.push(newTime.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }));
-    }
+    // Adjust the loop so it correctly generates 'amount' times
+    for (let i = 1; i <= amount; i++) {
+        const newTime = new Date(baseTime.getTime() + i * interval * 60000);
+        times.push(newTime.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }));
+      }
 
     setResults(times);
   };
