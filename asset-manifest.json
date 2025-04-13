@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Elad220/interval-calculator/static/css/main.722eafe8.css",
+    "main.js": "/Elad220/interval-calculator/static/js/main.7efeaa2a.js",
+    "static/js/453.3ad3826a.chunk.js": "/Elad220/interval-calculator/static/js/453.3ad3826a.chunk.js",
+    "index.html": "/Elad220/interval-calculator/index.html",
+    "main.722eafe8.css.map": "/Elad220/interval-calculator/static/css/main.722eafe8.css.map",
+    "main.7efeaa2a.js.map": "/Elad220/interval-calculator/static/js/main.7efeaa2a.js.map",
+    "453.3ad3826a.chunk.js.map": "/Elad220/interval-calculator/static/js/453.3ad3826a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.722eafe8.css",
+    "static/js/main.7efeaa2a.js"
+  ]
+}
