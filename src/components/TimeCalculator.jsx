@@ -14,7 +14,7 @@ function TimeCalculator() {
     const baseTime = new Date(`1970-01-01T${initialTime}:00`);
     const times = [];
 
-    for (let i = 0; i < amount; i++) {
+    for (let i = 1; i < amount; i++) {
       const newTime = new Date(baseTime.getTime() + i * interval * 60000);
       times.push(newTime.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }));
     }
@@ -29,7 +29,7 @@ function TimeCalculator() {
         <Row className="mb-3">
           <Col xs={12} sm={6} md={4}>
             <Form.Group controlId="amount">
-              <Form.Label>Amount</Form.Label>
+              <Form.Label>Amount to Generate</Form.Label>
               <Form.Control
                 type="number"
                 onChange={(e) => setAmount(parseInt(e.target.value))}
