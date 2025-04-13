@@ -27,36 +27,44 @@ function TimeCalculator() {
       <h2 className="text-center mb-4">Time Interval Generator</h2>
       <Form onSubmit={handleSubmit}>
         <Row className="mb-3">
-          <Col>
-            <Form.Control
-              type="number"
-              placeholder="Amount"
-              onChange={(e) => setAmount(parseInt(e.target.value))}
-              required
-            />
+          <Col xs={12} sm={6} md={4}>
+            <Form.Group controlId="amount">
+              <Form.Label>Amount</Form.Label>
+              <Form.Control
+                type="number"
+                onChange={(e) => setAmount(parseInt(e.target.value))}
+                required
+              />
+            </Form.Group>
           </Col>
-          <Col>
-            <Form.Control
-              type="number"
-              placeholder="Interval (minutes)"
-              onChange={(e) => setInterval(parseInt(e.target.value))}
-              required
-            />
+          <Col xs={12} sm={6} md={4}>
+            <Form.Group controlId="interval">
+              <Form.Label>Interval (minutes)</Form.Label>
+              <Form.Control
+                type="number"
+                onChange={(e) => setInterval(parseInt(e.target.value))}
+                required
+              />
+            </Form.Group>
           </Col>
-          <Col>
-            <Form.Control
-              type="time"
-              onChange={(e) => setInitialTime(e.target.value)}
-              required
-            />
+          <Col xs={12} sm={6} md={4}>
+            <Form.Group controlId="initialTime">
+              <Form.Label>Initial Time</Form.Label>
+              <Form.Control
+                type="time"
+                onChange={(e) => setInitialTime(e.target.value)}
+                required
+              />
+            </Form.Group>
           </Col>
-          <Col>
+          <Col xs={12} sm={6} md={4} className="d-flex align-items-end">
             <Button type="submit" variant="primary" className="w-100">
               Submit
             </Button>
           </Col>
         </Row>
       </Form>
+
       {results.length > 0 && (
         <ListGroup className="mt-4">
           {results.map((time, idx) => (
