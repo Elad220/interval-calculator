@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/interval-calculator/static/css/main.722eafe8.css",
-    "main.js": "/interval-calculator/static/js/main.04b969b2.js",
+    "main.js": "/interval-calculator/static/js/main.be966ea8.js",
     "static/js/453.3ad3826a.chunk.js": "/interval-calculator/static/js/453.3ad3826a.chunk.js",
     "index.html": "/interval-calculator/index.html",
     "main.722eafe8.css.map": "/interval-calculator/static/css/main.722eafe8.css.map",
-    "main.04b969b2.js.map": "/interval-calculator/static/js/main.04b969b2.js.map",
+    "main.be966ea8.js.map": "/interval-calculator/static/js/main.be966ea8.js.map",
     "453.3ad3826a.chunk.js.map": "/interval-calculator/static/js/453.3ad3826a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.722eafe8.css",
-    "static/js/main.04b969b2.js"
+    "static/js/main.be966ea8.js"
   ]
 }
